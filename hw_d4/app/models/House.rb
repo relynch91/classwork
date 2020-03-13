@@ -1,3 +1,0 @@
-class House <ApplicationRecord
-    
-end
