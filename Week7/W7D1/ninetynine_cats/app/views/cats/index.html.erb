@@ -1,0 +1,10 @@
+<h1>All the Cats Indexed</h1>
+
+<% @cats.each do |cat| %>
+<a href="<%=cat_url(cat.id)%>">Show page</a>
+    <%= cat.name %> 
+    <%= cat.color %>
+    <%= cat.birth_date %>
+    <%= cat.sex %>
+    <%= cat.description %>
+<% end %>
