@@ -1,0 +1,12 @@
+<h1>User Show</h1>
+
+<%= @user.username %>
+
+
+
+<% @user.posts.each do |post| %>
+    <ul>
+        <li><%= post.title %></li>
+        <li><%= post.content %></li>
+    </ul>
+<% end %>
