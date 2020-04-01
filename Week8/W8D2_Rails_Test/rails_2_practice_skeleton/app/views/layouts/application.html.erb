@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Goal App</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <% if flash[:errors] %>
+      <%= flash[:errors].join(", ")%>
+      <%end%>
+    
+
+    <% if signed_in? %>
+      <form action="<%= session_url %>" method="Post">
+          <input type="hidden" name = "_method" value="Delete">
+          <button>Sign Out</button>
+      </form>
+      <%end%>
+    <%= yield %>
+  </body>
+</html>
+
+

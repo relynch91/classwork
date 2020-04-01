@@ -1,0 +1,16 @@
+<form action="<%= user_poems_url(@user) %>" method="Post">
+    <label>Title
+    <input  name="poem[title]" id="">
+    </label>
+    <label>Stanzas
+    <input  name="poem[stanzas]" id="">
+    </label>
+
+    <label>True
+        <input type="radio" name="poem[status]" value="true">
+    </label>
+    <label>False
+        <input type="radio" name="poem[status]" value="false">
+    </label>
+
+</form>

@@ -1,0 +1,23 @@
+class GoalsController < ApplicationController
+    before_action :require_sign_in!, only:[:create, :destroy]
+    
+    def create
+        @goal = Goal.new(goal_params)
+        @goal.user_id = params[:user_id]
+        if @goal.save
+        else 
+            flash[:errors] = @goal.errors.full_messages 
+        end
+        redirect_to user_url(params[:user_id])
+
+    end
+
+    def destroy
+
+    end
+    private 
+
+    def goal_params
+        params.require(:goal).permit(:name, :details, :status)
+    end
+end
