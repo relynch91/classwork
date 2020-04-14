@@ -1,0 +1,39 @@
+current directory: /Users/ryan/Desktop/ryan_lynch_rails2 4/vendor/bundle/ruby/2.5.0/gems/ffi-1.12.2/ext/ffi_c
+/Users/ryan/.rbenv/versions/2.5.1/bin/ruby -I /Users/ryan/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200406-85438-ippcj7.rb extconf.rb --enable-system-libffi
+checking for ffi.h... no
+checking for ffi.h in /usr/local/include,/usr/include/ffi... no
+system libffi is not usable
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/ryan/.rbenv/versions/2.5.1/bin/$(RUBY_BASE_NAME)
+	--with-ffi_c-dir
+	--without-ffi_c-dir
+	--with-ffi_c-include
+	--without-ffi_c-include=${ffi_c-dir}/include
+	--with-ffi_c-lib
+	--without-ffi_c-lib=${ffi_c-dir}/lib
+	--enable-system-libffi
+	--with-libffi-config
+	--without-libffi-config
+	--with-pkg-config
+	--without-pkg-config
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/ryan/Desktop/ryan_lynch_rails2 4/vendor/bundle/ruby/2.5.0/extensions/x86_64-darwin-19/2.5.0-static/ffi-1.12.2/mkmf.log
+
+extconf failed, exit code 1

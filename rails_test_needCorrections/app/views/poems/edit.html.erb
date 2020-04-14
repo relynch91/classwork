@@ -1,0 +1,17 @@
+<h1>Edit Poem Form</h1>
+<form action="<%= poem_url(params[:id]) %>" method="Post">
+    <label>Title
+    <input  name="poem[title]" value="" >
+    </label>
+    <label>Stanzas
+    <input  name="poem[stanzas]" value="">
+    </label>
+
+    <label>True
+        <input type="radio" name="poem[complete]" value="true">
+    </label>
+    <label>False
+        <input type="radio" name="poem[complete]" value="false">
+    </label>
+    <button>Save Edited Poem</button>
+</form>
