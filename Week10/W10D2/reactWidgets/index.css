@@ -1,0 +1,7 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Girassol', cursive;
+}
+.clock > span {
+    font-size: 40px;
+}
